@@ -1,5 +1,5 @@
 fun main() {
-    val eclairage = AmpouleLed();
+    val eclairage = AmpouleTube();
     /**
      * Cycles d'éclairage et d'extinction d'une ampoule
      */
@@ -8,7 +8,7 @@ fun main() {
     do {
         eclairage.allumer();
 
-        while(eclairage.etat() > 0 ){
+        while(eclairage.etat() > 0 ) {
             eclairage.diminuer();
         }
 
